@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body{
+            background: #1d1d32;
+            color:white;
+            font: normal 19pt Arial;
+        }
+        div{
+            font: align-self normal;
+        }
+    </style>
+</head>
+<body>
+    <h1 >Iniciando estudos com o DOM</h1>
+    <P>Aqui vai o resultado</P>
+    <p>Aprendendo a usar o <strong>DOM</strong>em Javascript.</p>
+    <div id="msg" name="iso" class="">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var d = window.document.getElementById('msg')
+        var div = document.getElementsByName('iso')
+        var di = window.document.querySelector('')
+        window.document.write('Está escrito assim: ' + p1.innerText)
+       
+    </script>
+</body>
+</html>
